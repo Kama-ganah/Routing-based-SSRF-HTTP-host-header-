@@ -1,7 +1,7 @@
 # Overview
 During an assessment of the application’s internal routing and request handling, I identified a high-severity Server-Side Request Forgery (SSRF) vulnerability caused by trusting user-supplied Host headers. By manipulating this header, it was possible to route requests to internal services within the 192.168.0.0/24 subnet, ultimately granting access to an internal admin panel. This allowed unauthorized actions such as deleting a user account.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Intercepted and analyzed HTTP requests using Burp Suite to understand routing behavior.
 
